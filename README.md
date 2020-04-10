@@ -1,27 +1,21 @@
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/cryptonotefoundation/cryptonotewallet.git
+git clone https://github.com/Steve-sy/mmrcoinwallet.git
 ```
 
 **2. Modify `CryptoNoteWallet.cmake`**
  
 ```
-set(CN_PROJECT_NAME "furiouscoin")
-set(CN_CURRENCY_DISPLAY_NAME "FuriousCoin")
-set(CN_CURRENCY_TICKER "XFC")
+set(CN_PROJECT_NAME "mmrcoin-o")
+set(CN_CURRENCY_DISPLAY_NAME "MMRcoin")
+set(CN_CURRENCY_TICKER "MMR")
 ```
 
-**3. Set symbolic link to coin sources at the same level as `src`. For example:**
+**3. Set Alternative way is to create git submodule:**
 
 ```
-ln -s ../cryptonote cryptonote
-```
-
-Alternative way is to create git submodule:
-
-```
-git submodule add https://github.com/cryptonotefoundation/cryptonote.git cryptonote
+git submodule add https://github.com/Steve-sy/mmrcoin-o.git cryptonote
 ```
 
 Replace URL with git remote repository of your coin.
